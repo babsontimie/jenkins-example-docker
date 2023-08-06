@@ -1,13 +1,13 @@
 pipeline {
   agent {
 //    dockerContainer { image 'node:16-alpine' }
- docker { image 'jenkins/agent'}
+ docker { image 'ubuntu:latest'}
   }
   stages {
     stage('Test') {
       steps {
 //       sh 'node --version'
-        sh 'echo Hello'
+        sh 'uname -a'
       }
     }
   }
