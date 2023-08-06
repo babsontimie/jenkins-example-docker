@@ -1,13 +1,14 @@
 pipeline {
   agent {
-//    dockerContainer { image 'node:16-alpine' }
- dockerContainer { image 'babsontimie/mydockubuntuagent:0.1'}
+    dockerContainer { image 'node:16-alpine' }
+ //dockerContainer { image 'babsontimie/mydockubuntuagent:0.1'}
   }
   stages {
     stage('Test') {
       steps {
-//       sh 'node --version'
-        sh 'uname -a'
+       sh '''node --version
+        sh uname -a
+         '''
       }
     }
   }
