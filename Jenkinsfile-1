@@ -1,7 +1,8 @@
 pipeline {
   agent {
 //    docker { image 'node:16-alpine' }
- dockerContainer { image 'alpine:latest'}
+ // dockerContainer { image 'alpine:latest'}
+label { 'tee-docker-agent' }
   }
   stages {
     stage('Test') {
