@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    dockerContainer { image 'babsontimie/jenkdocker' }
+    labels 'demo-docker-slave' }
   }
   stages {
     stage('Test') {
