@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    label 'demo-docker-slave' 
+    label 'demo-docker-sshagent' 
   }
   stages {
     stage('Test') {
