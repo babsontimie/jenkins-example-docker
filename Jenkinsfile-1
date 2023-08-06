@@ -1,7 +1,7 @@
 pipeline {
   agent {
 //   label 'demo-docker-sshagent' 
-   docker { image 'babsontimie/jenkdocker:latest' }
+   any { image 'babsontimie/jenkdocker:latest' }
   }
   stages {
     stage('Test') {
