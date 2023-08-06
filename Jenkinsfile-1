@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    docker { image 'babsontimie/jenkdocker' }
+    dockerContainer { image 'babsontimie/jenkdocker' }
   }
   stages {
     stage('Test') {
