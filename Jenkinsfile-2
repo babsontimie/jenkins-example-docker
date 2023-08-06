@@ -1,5 +1,7 @@
 pipeline {
-  agent none
+  agent {
+        label 'docker-jnlp-agent'
+         }
   stages {
     stage('Back-end') {
       agent {
