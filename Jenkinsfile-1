@@ -3,7 +3,7 @@ pipeline {
 //   label 'demo-docker-sshagent' 
  //  any { image 'babsontimie/jenkdocker:latest' }
 
-        dockerfile true
+    any { dockerfile true }
   }
   stages {
     stage('Test') {
