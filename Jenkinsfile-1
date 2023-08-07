@@ -1,12 +1,14 @@
 pipeline {
   agent {
 //   label 'demo-docker-sshagent' 
-   any { image 'babsontimie/jenkdocker:latest' }
+ //  any { image 'babsontimie/jenkdocker:latest' }
+
+        dockerfile true
   }
   stages {
     stage('Test') {
       steps {
-       sh '''java --version
+       sh '''node --version
         uname -a
          '''
       }
